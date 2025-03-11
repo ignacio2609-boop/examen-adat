@@ -11,6 +11,7 @@ public interface AlquilerRepo extends JpaRepository<Alquiler, Integer> {
 
     List<Alquiler> findByContainingIgnoreCase(String titulo);
     List<Alquiler> findByUsuarioId(Long id);
+    List<Alquiler> findByCocheId(Long id);
 
 
 }
